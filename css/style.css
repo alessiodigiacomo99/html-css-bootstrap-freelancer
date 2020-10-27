@@ -1,0 +1,46 @@
+h2{
+  text-transform: uppercase;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+nav.navbar{
+  background-color: blue;
+}
+
+.navbar .container{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.jumbotron{
+  background: aqua;
+}
+
+.jumbotron .container{
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+/* /header */
+.about{
+  background-color: aqua;
+}
+
+.about .container{
+  color: white;
+}
+
+form button.btn{
+  background-color: aqua;
+  color: white;
+}
+/* /main */
+footer{
+  background-color: blue;
+  color: white;
+}
