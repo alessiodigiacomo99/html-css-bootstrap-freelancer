@@ -1,14 +1,45 @@
+h1{
+  font-weight: 700;
+}
+
 h2{
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+h3{
+  font-weight: 700;
+  font-size: 25px;
 }
 
 a{
-  color: white;
   text-decoration: none;
 }
 
-nav.navbar{
-  background-color: blue;
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.bordo{
+  width: 100%;
+  height: 5px;
+  max-width: 100px;
+  display: inline-block;
+  margin-bottom: 7px;
+  border-radius: 10%;
+}
+
+.icona{
+  display: inline-block;
+  font-size: 30px;
+  max-width: 50px;
+  margin: 10px 0;
+}
+/* /utility */
+nav.navbar, footer{
+  background-color: #2C3E50;
 }
 
 .navbar .container{
@@ -17,30 +48,147 @@ nav.navbar{
   transform: translateY(-50%);
 }
 
-.jumbotron{
-  background: aqua;
+nav.navbar{
+  padding: 40px 0;
 }
 
-.jumbotron .container{
-  text-align: center;
-  text-transform: uppercase;
+nav > div.container > div.row > div.col-lg-9 > div{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav > div.container > div.row > div.col-lg-3{
+  margin-top: 10px;
+}
+
+.navbar a, nav > div.container > div.row > div > div{
+  font-weight: 700;
+}
+
+nav > div.container > div.row > div >div, .jumbotron .container, .about .container, form button.btn, a, footer{
   color: white;
+}
+
+.navbar a:hover{
+  color: #1ABC9C;
+  text-decoration: none;
+}
+
+.jumbotron{
+  margin-top: 50px;
+}
+
+.jumbotron img{
+  max-height: 200px;
+}
+
+.jumbotron, .about,.about .btn, form button.btn{
+  background-color: #1ABC9C;
+}
+
+.jumbotron .bordo, .about .bordo{
+  background-color: white;
+}
+
+.jumbotron span.text-uppercase{
+  font-size: 20px;
 }
 /* /header */
-.about{
-  background-color: aqua;
+.portfolio, .about, .contact{
+  padding: 50px;
 }
 
-.about .container{
+.portfolio .bordo, .contact .bordo{
+  background-color: #2C3E50;
+}
+
+.portfolio .row .col-lg-4 .card{
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 0;
+  margin: 10px;
+}
+
+.portfolio .row .col-lg-4:first-child .card{
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png");
+}
+
+.portfolio .row .col-lg-4:nth-child(2) .card{
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png");
+}
+
+.portfolio .row .col-lg-4:nth-child(3) .card{
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png");
+}
+
+.portfolio .row .col-lg-4:nth-child(4) .card{
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png");
+}
+
+.portfolio .row .col-lg-4:nth-child(5) .card{
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png");
+}
+
+.portfolio .row .col-lg-4:last-child .card{
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png");
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.overlay:hover {
+  background-color: rgba(26, 188, 156, 0.8);
+}
+
+.about .btn{
+  border: 1px solid white;
+}
+
+.about .btn:hover{
+  background-color: white;
+  color: #1A252F;
+}
+
+.contact .btn{
+  margin: 10px 0;
+}
+
+.contact .btn:hover{
+  background-color: #159A80;
   color: white;
 }
 
-form button.btn{
-  background-color: aqua;
-  color: white;
+.contact hr{
+  height: 1px;
+  background-color: black;
 }
 /* /main */
-footer{
-  background-color: blue;
-  color: white;
+footer .container{
+  padding: 40px 0;
+}
+
+footer ul{
+  margin-top: 10px;
+}
+
+footer ul li a i{
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+footer ul li a i:hover{
+  background-color: white;
+  color: #2C3E50;
+}
+.copyright{
+  background-color: #1A252F;
+  padding: 30px 0;
 }
